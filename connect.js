@@ -1,7 +1,7 @@
 require('dotenv').config();
 
 const near = require('near-api-js');
-const options = require('./options');
+const options = require('./options')();
 
 async function main() {
   const client = await near.connect(options);
